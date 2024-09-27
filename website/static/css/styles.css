@@ -1,0 +1,39 @@
+body {
+	background: #555555;
+	color: #dfdfdf;
+	text-align: center;
+	margin: 1.4em 0 0 0;
+	min-width: 435px
+}
+.hola {
+	background-color:#333333;
+	color: #dfdfdf;
+	margin: 0 0.3em;
+	align-items: center;
+	border-radius: 8px;
+}
+
+.hola:hover {
+	background-color: #222222;
+}
+
+.hola:active {
+	background-color: #222222;
+	border: solid 0.5px #111111;
+}
+
+.titulo {
+font-family: sans-serif;
+background-color: #993540;
+border-radius: 12px;
+}
+
+.buton {
+	background: #993333;
+	color: #aaaaaa;
+	border-radius: 6px
+}
+
+.buton:hover{
+	background: #772222
+}
