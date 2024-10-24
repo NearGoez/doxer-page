@@ -1,25 +1,25 @@
 from flask import Blueprint, render_template, request
 import time
 
-with open('/home/denis/webpage/website/18millones.txt', 'r', encoding='cp1252') as f:
+with open('website/18millones.txt', 'r', encoding='cp1252') as f:
     data = f.read()
-with open('/home/denis/webpage/website/19millones.txt', 'r', encoding='cp1252') as f:
+with open('website/19millones.txt', 'r', encoding='cp1252') as f:
     data += f.read()
-with open('/home/denis/webpage/website/20millones.txt', 'r', encoding='cp1252') as f:
+with open('website/20millones.txt', 'r', encoding='cp1252') as f:
     data += f.read()
-with open('/home/denis/webpage/website/21millones.txt', 'r', encoding='cp1252') as f:
+with open('website/21millones.txt', 'r', encoding='cp1252') as f:
     data += f.read()
-with open('/home/denis/webpage/website/22millones.txt', 'r', encoding='cp1252') as f:
+with open('website/22millones.txt', 'r', encoding='cp1252') as f:
     data += f.read()
-with open('/home/denis/webpage/website/23millones.txt', 'r', encoding='cp1252') as f:
+with open('website/23millones.txt', 'r', encoding='cp1252') as f:
     data += f.read()
-with open('/home/denis/webpage/website/24millones.txt', 'r', encoding='cp1252') as f:
+with open('website/24millones.txt', 'r', encoding='cp1252') as f:
     data += f.read()
-with open('/home/denis/webpage/website/25millones.txt', 'r', encoding='cp1252') as f:
+with open('website/25millones.txt', 'r', encoding='cp1252') as f:
     data += f.read()
-with open('/home/denis/webpage/website/26millones.txt', 'r', encoding='cp1252') as f:
+with open('website/26millones.txt', 'r', encoding='cp1252') as f:
     data += f.read()
-with open('/home/denis/webpage/website/27millones.txt', 'r', encoding='cp1252') as f:
+with open('website/27millones.txt', 'r', encoding='cp1252') as f:
     data += f.read()
 
 data = data.split('\n')

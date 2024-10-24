@@ -1,0 +1,38 @@
+with open('/home/jordanbelfort/webpage/website/20millones.txt', 'r', encoding='cp1252') as f:
+    data += f.read()
+with open('/home/jordanbelfort/webpage/website/21millones.txt', 'r', encoding='cp1252') as f:
+    data = f.read()
+with open('/home/jordanbelfort/webpage/website/22millones.txt', 'r', encoding='cp1252') as f:
+    data += f.read()
+with open('/home/jordanbelfort/webpage/website/23millones.txt', 'r', encoding='cp1252') as f:
+    data += f.read()
+with open('/home/jordanbelfort/webpage/website/24millones.txt', 'r', encoding='cp1252') as f:
+    data += f.read()
+with open('/home/jordanbelfort/webpage/website/25millones.txt', 'r', encoding='cp1252') as f:
+    data += f.read()
+with open('/home/jordanbelfort/webpage/website/26millones.txt', 'r', encoding='cp1252') as f:
+    data += f.read()
+with open('/home/jordanbelfort/webpage/website/27millones.txt', 'r', encoding='cp1252') as f:
+    data += f.read()
+
+data = data.split('\n')
+
+with open('companeros.txt', 'r') as f:
+    file = f.readlines()
+nombres = []
+for i in range(len(file)):
+    if i%6==0 or i%6==6:
+        if file[i].strip() !='Estudiante':
+            nombres.append(file[i].strip())
+        else:
+            nombres.append(file[i].strip()) 
+
+c = 0
+for compa in nombres:
+    for persona in data: 
+        if compa.upper().strip() in persona:
+            nombres.remove(compa)
+            c +=1
+            print(persona)
+print(nombres)
+print(f'se encontraron {c} personas')
