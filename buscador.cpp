@@ -15,7 +15,7 @@ int main(){
     }
     
     for(string persona : data){
-        if (persona.find("DENIS") != string::npos){
+        if (persona.find("DENIS") != string::npos){                    
             cout << persona << endl;
         }
     }
