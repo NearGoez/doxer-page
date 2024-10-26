@@ -25,14 +25,17 @@ with open('website/27millones.txt', 'r', encoding='cp1252') as f:
 data = data.split('\n')
 
 def buscar(nombres, apellidos):
+    inicio = time.perf_counter()
     nombres, apellidos = nombres.upper(), apellidos.upper()
+    counter  = 0
     resultado = '<html><body><p>'
     for x in data:
         if nombres in x and apellidos in x:
-
+            counter += 1
             resultado += f'{x} <br>'
 
-    
+    fin = time.perf_counter()
+    resultado += f" la busqueda retorno {counter} resultados en {fin - inicio} segundos"
     resultado += '</p></body></html>'
     return resultado
 
