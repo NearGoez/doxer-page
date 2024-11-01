@@ -1,6 +1,8 @@
 from flask import Blueprint, render_template, request
 import time
 
+
+
 with open('website/18millones.txt', 'r', encoding='cp1252') as f:
     data = f.read()
 with open('website/19millones.txt', 'r', encoding='cp1252') as f:
